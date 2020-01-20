@@ -4,13 +4,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('VIBT'),
-        centerTitle: true,
-        elevation: 0,
-        backgroundColor: Color(0xff52B154),
-      ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Container(
             width: MediaQuery.of(context).size.width,
@@ -19,7 +15,6 @@ class Home extends StatelessWidget {
           )
         ],
       ),
-      drawer: Drawer(),
     );
   }
 }
